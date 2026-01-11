@@ -107,3 +107,13 @@ export default function Game() {
     </div>
   )
           }
+// jab enemy player ke paas aaye
+if (Math.abs(enemy.x - player.x) < 30) {
+  setPlayerHP(hp => hp - 5)
+}
+<div className="health-bar">
+  <div
+    className="health-fill"
+    style={{ width: `${hp}%` }}
+  />
+</div>
