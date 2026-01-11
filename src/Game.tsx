@@ -117,3 +117,6 @@ if (Math.abs(enemy.x - player.x) < 30) {
     style={{ width: `${hp}%` }}
   />
 </div>
+<button onTouchStart={() => moveLeft()}>⬅️</button>
+<button onTouchStart={() => attack()}>⚔️</button>
+<button onTouchStart={() => moveRight()}>➡️</button>
