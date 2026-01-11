@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background: radial-gradient(#0b0b0b, #000);
+  color: #eee;
+  font-family: system-ui, sans-serif;
+}
+
+.game {
+  text-align: center;
+}
+
+.hud {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #3a0;
+  color: black;
+  border: none;
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.arena {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin: auto;
+  background: linear-gradient(#111, #050505);
+  border: 2px solid #333;
+  overflow: hidden;
+}
+
+.base {
+  position: absolute;
+  top: 60px;
+  width: 50px;
+  height: 80px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.base.player {
+  left: 0;
+  background: #222;
+  color: cyan;
+}
+
+.base.enemy {
+  right: 0;
+  background: #300;
+  color: red;
+}
+
+.unit {
+  position: absolute;
+  bottom: 40px;
+  width: 14px;
+  height: 30px;
+}
+
+.unit.player {
+  background: cyan;
+}
+
+.unit.enemy {
+  background: crimson;
+}
+
+.hp {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 4px;
+  background: lime;
+}
