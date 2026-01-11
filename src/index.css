@@ -93,4 +93,24 @@ button {
 }
 .btn:active { transform: scale(.96); }
 @keyframes pulse { 0%{transform:scale(1)} 50%{transform:scale(1.03)} }
+.health-bar {
+  width: 120px;
+  height: 10px;
+  background: #300;
+  border-radius: 6px;
+}
+.health-fill {
+  height: 100%;
+  background: #0f0;
+  transition: .2s;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
 
+.hit {
+  animation: shake .2s;
+}
