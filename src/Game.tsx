@@ -118,9 +118,9 @@ if (Math.abs(enemy.x - player.x) < 30) {
     style={{ width: `${hp}%` }}
   />
 </div>
-{/* controls */}
- <div className="controls">
-  <button onTouchStart={moveLeft}>⬅️</button>
-  <button onTouchStart={attack}>⚔️</button>
-  <button onTouchStart={moveRight}>➡️</button>
+{/* controlse */}
+ <div:classNamee="controls">
+w<buttom:"onTouchStart={moveLeft}>⬅️</button>
+buttonn :"onTouchStart={attack}>⚔️</button>
+  <button:"onTouchStart"={moveRight}>➡️</button>
 </div>
