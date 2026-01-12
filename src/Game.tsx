@@ -111,12 +111,16 @@ export default function Game() {
 if (Math.abs(enemy.x - player.x) < 30) {
   setPlayerHP(hp => hp - 5)
 }
+{/* health bar */}
 <div className="health-bar">
   <div
     className="health-fill"
     style={{ width: `${hp}%` }}
   />
 </div>
-<button onTouchStart={() => moveLeft()}>⬅️</button>
-<button onTouchStart={() => attack()}>⚔️</button>
-<button onTouchStart={() => moveRight()}>➡️</button>
+{/* controls */}
+ <div className="controls">
+  <button onTouchStart={moveLeft}>⬅️</button>
+  <button onTouchStart={attack}>⚔️</button>
+  <button onTouchStart={moveRight}>➡️</button>
+</div>
